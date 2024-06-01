@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+body {
+    margin: 0 auto;
+    padding: 0;
+    /* width: 1200px; */
+    font-family: 'Montserrat';
+}
+.flex{ 
+    display: flex;
+    justify-content: space-between;
+}
+header{
+    text-align: center;
+    align-items: center;
+    padding: 0 50px;
+}
+header ul {
+    width: 275px;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    display: block;
+}
+a, span {
+    color: #000000;
+    font-weight: 400;
+}
+header a:hover {
+    text-decoration: underline;
+    font-weight: 700;
+}
+a {
+    font-size: 20px;
+}
+h2 a{
+    font-size: 28px;
+    font-weight: 700;
+    width: 290px;
+}
+h2 a:hover {
+    text-decoration: none;
+}
+.icons {
+    width: 175px;
+}
+.icons button {
+    border: none;
+    background: none;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.icons button:hover {
+    opacity: 1;
+}
+.container1 img {
+    width: 1200px;
+}
+footer {
+    background-color: #000000;
+    align-items: center;
+}
+.footer_menu a {
+    color: #ffffff;
+}
+footer ul {
+    padding: 0 50px;
+    text-align: center;
+}
+footer img {
+    padding: 50px 0;
+}
+footer li {
+    padding: 25px 0;
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s, visibility .4s;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.7;
+    z-index: 0;
+}
+.modal-login {
+    position: relative;
+    z-index: 1;
+    width: 410px;
+    border-radius: 18px;
+    box-shadow: 0 18px 15px rgba(0,0,0,0.4);
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: transform .8s;
+}
+.modal-login h2{
+    padding: 15px;
+    text-align: center;
+}
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+  }
+.input-box label {
+    position: absolute;
+    top: -20px; 
+    left: 0;
+    font-size: 18px;
+    color: #666;   
+}
+.input-box input {
+    width: 100%;
+    padding: 8px;
+    font-size: 18px;
+    margin: 13px 0;
+}
+.remember-forgot label input {
+    accent-color: #464646;
+    margin-right: 3px;
+}
+.btn-login {
+    width: 100%;
+    height: 45px;
+    background: #464646;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Montserrat';
+    margin: 10px 0 35px 0;
+}
+.btn-close {
+    position: absolute;
+    padding: 20px;
+    right: 0;
+    top: 0;
+    border: none;
+    background: none;
+    opacity: 0.7;
+}
+.btn-close:hover {
+    opacity: 1;
+}
+.modal.active {
+    visibility: visible;
+    opacity: 1;
+}
+.modal.active .modal-login {
+    transform: scale(1);
+}
+.modal-cart {
+    position: fixed;
+    top: 75px;
+    left: 90%;
+    transform: translateX(-50%) scale(0);   
+    transition: transform .3s ease;
+    width: 230px;
+    background-color: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 18px 15px rgba(0,0,0,0.4);
+}
+.modal-cart h2 {
+    text-align: center;
+    font-size: 18px;
+
+}
+.modal-cart .btn-main {
+    width: 100%;
+    height: 35px;
+    background: #464646;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Montserrat';
+    margin-bottom: 25px;
+}
+.btn-close-cart {
+    position: absolute;
+    padding: 20px;
+    right: 0;
+    top: 0;
+    border: none;
+    background: none;
+    opacity: 0.7;
+}
+.modal-cart.active-cart {
+    transform: translateX(-50%) scale(1);
+}
+
+
+section {
+    background-image: url(./img/image\ 12.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+section h2, p {
+    font-size: 35px;
+    font-weight: 900;
+    font-style: italic;
+    color: #ffffff;
+    padding: 50px 0 0 50px;
+    margin: 0;
+}
+section p {
+    font-size: 18px;
+    width: 470px;
+    font-style: normal;
+    padding: 29px 0 0 50px;
+    margin: 0;
+}
+.btn {
+    width: 200px;
+    padding: 30px 50px;
+    text-align: center;
+}
+.btn a {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 25px;
+    background: #ffffff;
+    border-radius: 16px;
+}
+.nike img {
+    width: 100%;
+}
+.bg_image {
+    background-image: url(img/Rectangle\ 1141.png);
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards {
+    padding: 0 50px;
+    position: relative;
+    top: -50px;
+    margin-bottom: 110px;
+}
+.card {
+    width: 600px;
+    height: 275px;
+    border-radius: 18px;
+    box-shadow: 5px 5px 25px 0px #00000040;
+    background: #efefef;
+}
+.card_text {
+    padding: 60px 0 0 60px;
+    width: 230px;
+}
+.card_text h2 {
+    color: #ff3939;
+    font-size: 48px;
+    font-weight: 700;
+    font-style: italic;
+    margin: 0;
+}
+.card_text p {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 0;
+}
+.circle {
+    width: 55px;
+    height: 55px;
+    border-radius: 35px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shoes img{
+    width: 100%;
+    position: relative;
+    top: -80px;
+    left: 70px;
+    transition: transform 1s ease;
+}
+.rotate-left {
+    transform: rotate(-30deg);
+}
+
+.rotate-right {
+    transform: rotate(30deg);
+}
+.first_screen h2{
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+}
+.first_screen h1 {
+    font-size: 70px;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    margin: 10px 0;
+}
+.top {
+    padding: 100px 0 33px 0;
+}
+.first_screen span{
+    font-size: 40px;
+    font-weight: 700;
+    padding-left: 50px;
+}
+.arrow {
+    width: 55px;
+    height: 55px;
+    border-radius: 35px;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow:nth-child(2) {
+    margin: 0 50px 0 25px;
+}
+.arrow:hover {
+    background: #c6c6c6;
+}
+.vertical_cards {
+    margin: 0 50px 100px 50px;
+}
+.vert_card {
+    width: 390px;
+    border-radius: 18px;
+    box-shadow: 5px 5px 25px 0px #00000040;
+    background: #efefef;
+    position: relative;
+}
+.vert_card img {
+    width: 325px;
+}
+.vert_card h2{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 35px;
+}
+.vert_card p {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 27px 0 67px 35px;
+    color: #000000;
+    font-style: normal;
+}
+.vert_card .circle {
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    margin-right: 30px;
+}
+.circle img {
+    width: 21px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 50px;
+}
+.grid_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid_card p {
+    color: #000000;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.second_screen h2 {
+    font-size: 40px;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    padding: 100px 0 150px 0;
+}
+.card_text h3 {
+    color: #ff3939;
+    font-size: 22px;
+    font-weight: 700;
+}
+.card_text span {
+    font-size: 16px;
+    font-weight: 400;
+}
+.card_btn {
+    border-radius: 16px;
+    background: #000000;
+    margin-top: 30px;
+}
+.card_btn a {
+    padding: 15px 37px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 400;
+}
+.title h2 {
+    font-size: 40px;
+    font-weight: 700;
+    padding-left: 50px;
+}
+.second_section {
+    background-image: url(img/image\ 11.png);
+}
+.last_screen h3 {
+    font-size: 24px;
+    font-weight: 400;
+    padding-top: 100px;
+    text-align: center;
+}
+.last_screen h2 {
+    font-size: 48px;
+    font-weight: 900;
+    font-style: italic;
+    padding-top: 30px;
+    margin: 0;
+    text-align: center;
+}
+.last_screen img {
+    padding: 30px 0 100px 0;
+    display: block;
+    margin: 0 auto;
+}
